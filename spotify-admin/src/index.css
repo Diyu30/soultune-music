@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar-item {
+  @apply flex items-center gap-4 px-5 py-3 text-black bg-[#d0d4d2] 
+  rounded-lg hover:bg-[#6f7573] hover:shadow-lg transition-all duration-200;
+}
+
+.sidebar-item span {
+  @apply text-sm font-medium hidden sm:block;
+}
+
+/* Active Link Styling */
+.sidebar-item.active {
+  @apply bg-[#87918c] text-white font-bold shadow-md;
+}
